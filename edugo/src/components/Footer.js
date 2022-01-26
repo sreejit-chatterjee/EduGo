@@ -11,7 +11,7 @@ export default function Footer(props) {
               <h2>EduGo</h2>
               <img className="logo" src="" alt="Logo" />
             </div>
-            <hr style="height:2px;border-width:0;color:gray;background-color:#FFD369"/>
+            <hr style={{height:"2px",borderWidth:"0",color:"gray",backgroundColor:"#FFD369"}}/>
             <div className="social">
                 <a href="#">
                     <i class="icon ion-social-instagram"></i>

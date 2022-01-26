@@ -3,6 +3,7 @@ import React from "react";
 // import ReadMore from "./ReadMore";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Register from "./Register";
 
 const ProjectItems = (props) => {
   const [title, setTitle] = useState("");
@@ -18,6 +19,9 @@ const ProjectItems = (props) => {
         setDisplayIt("none")
     }
     
+  }
+  const redirectRegister = () =>{
+    <Register/>
   }
 //   const a = key;
   return (
