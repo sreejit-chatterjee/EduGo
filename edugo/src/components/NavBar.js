@@ -3,9 +3,9 @@ import React from "react";
 export default function NavBar(props) {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar fixed-topnavbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             EduGo
           </a>
           <button
@@ -33,7 +33,7 @@ export default function NavBar(props) {
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                //   aria-expanded="false"
                 >
                   Projects
                 </a>
