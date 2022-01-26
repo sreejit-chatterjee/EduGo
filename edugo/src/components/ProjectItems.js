@@ -27,7 +27,7 @@ const ProjectItems = (props) =>{
           </div>
           <Link to="/readmore" class="btn btn-primary" >
             Read More and Register
-            <ReadMore title = {props.title}/>
+            {/* <ReadMore title = {props.title}/> */}
           </Link>
         </div>
       </div>
