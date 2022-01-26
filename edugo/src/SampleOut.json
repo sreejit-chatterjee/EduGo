@@ -5,7 +5,9 @@
         "title": "Project Title 1 ",
         "description": "Description for Project title 1",
         "datePublished": "2020-04-27T11:41:47Z",
-        "content": "Total Description Of Project 1."
+        "content": "Total Description Of Project 1.",
+        "uni": "IIT",
+        "tag": "DSA"
     },
     {
         "id": 2,
@@ -13,7 +15,8 @@
         "title": "Project Title 2 ",
         "description": "Description for Project title 2",
         "datePublished": "2021-03-24T11:41:47Z",
-        "content": "Total Description Of Project 2."
+        "content": "Total Description Of Project 2.",
+        "uni": "IIT"
     },
     {
         "id": 3,
@@ -21,7 +24,8 @@
         "title": "Project Title 3 ",
         "description": "Description for Project title 3",
         "datePublished": "2021-03-24T11:41:47Z",
-        "content": "Total Description Of Project 3."
+        "content": "Total Description Of Project 3.",
+        "uni": "IIT"
     },
     {
         "id": 4,
@@ -29,7 +33,8 @@
         "title": "Project Title 4 ",
         "description": "Description for Project title 4",
         "datePublished": "2021-03-24T11:41:47Z",
-        "content": "Total Description Of Project 4."
+        "content": "Total Description Of Project 4.",
+        "uni": "IIT"
     },
     {
         "id": 5,
@@ -37,6 +42,7 @@
         "title": "Project Title 5",
         "description": "Description for Project title 5",
         "datePublished": "2021-03-24T11:41:47Z",
-        "content": "Total Description Of Project 5."
+        "content": "Total Description Of Project 5.",
+        "uni" : "BITS"
     }
 ]
