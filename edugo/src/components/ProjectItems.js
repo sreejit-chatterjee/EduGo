@@ -1,12 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReadMore from './ReadMore';
+import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 const ProjectItems = (props) =>{
-  return <div>
+    const [title, setTitle] = useState("");
+    const titleSet = ()=>{
+        setTitle(props.title);
+    }
+    return (
+//   <Router>
+  
+  <div>
       <div class="card my-5">
         <div class="card-header">Subject</div>
         <div class="card-body">
-          <h5 class="card-title">{props.title}</h5>
+          <h5 class="card-title" onClick={titleSet}>{props.title}</h5>
           <p class="card-text">
             {props.content}
           </p>
@@ -15,12 +25,14 @@ const ProjectItems = (props) =>{
               <small class="text-muted">{props.date}</small>
             </p>
           </div>
-          <a href="#" class="btn btn-primary">
+          <Link to="/readmore" class="btn btn-primary" >
             Read More and Register
-          </a>
+            <ReadMore title = {props.title}/>
+          </Link>
         </div>
       </div>
-  </div>;
+  </div>
+  )
 }
 
 // ProjectItems.propTypes = {
