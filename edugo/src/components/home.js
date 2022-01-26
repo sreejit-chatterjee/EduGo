@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-
+import { Link } from "react-router-dom";
 export default function Home(props) {
   return(
     <div className="home">
@@ -42,37 +42,37 @@ export default function Home(props) {
           <h2>Services Provided By Us</h2>
           <div className="wrapper">
             
-            <a href="#" className="item">
+            <Link to="#" className="item">
               <div className="logo">
                 <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
               </div>
               <div className="border"></div>
               <h3>Lorem ipsum dolor, sit</h3> 
-            </a>
+            </Link>
 
-            <a href="#" className="item">
+            <Link to="#" className="item">
                 <div className="logo">
                   <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
                 </div>
                 <div className="border"></div>
                 <h3>Lorem ipsum dolor, sit</h3> 
-            </a>
+            </Link>
             
-            <a href="#" className="item">
+            <Link to="#" className="item">
                 <div className="logo">
                   <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
                 </div>
                 <div className="border"></div>
                 <h3>Lorem ipsum dolor, sit</h3>   
-            </a>
+            </Link>
             
-            <a href="#" className="item">
+            <Link to="#" className="item">
                 <div className="logo">
                   <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
                 </div>
                 <div className="border"></div>
                 <h3>Lorem ipsum dolor, sit</h3> 
-            </a>
+            </Link>
           </div>
           </div>
       </section>
@@ -83,7 +83,7 @@ export default function Home(props) {
           
           <div class="content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veritatis similique voluptatum odio eius ducimus animi perferendis ipsam expedita imp</p>
-            <a href="#">Contact Us</a>
+            <a to="#">Contact Us</a>
           </div>
         </div>
       </section>

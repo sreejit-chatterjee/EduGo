@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import BlogsPage from "./components/Blogs";
 import BlogMain from "./components/BlogMain";
 import Footer from "./components/Footer";
+import Questions from "./components/Questions";
 
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -22,6 +23,7 @@ const App = () => {
       <Route path = "/readmore" element = {<ReadMore/>}></Route>
       <Route path = "/blogs" element = {<BlogsPage />}></Route>
       <Route path = "/blogmain" element = {<BlogMain />}></Route> 
+      <Route path = "/Q&A" element = {<Questions/>}></Route>
       </Routes>
     </Router>
   );

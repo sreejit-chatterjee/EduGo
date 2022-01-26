@@ -1,20 +1,34 @@
 import React from "react";
 import PostData from "../blogSample.json";
 import BlogItems from "./BlogItems";
+import Filter from "./Filter";
 import "../App.css";
 
 const Projects = (props) => {
   return (
     // <div className="container ml-3 my-5 col-md-6">
-    <section className="blogs">
+    <section className="blogs" style={{marginTop : "%"}}>
       <div className="filters">
-        
+      {/* {PostData.map((element) => {
+          return (<Filter uni={element.uni} />);
+        })} */}
+        <div
+        className="container col-md-5"
+        style={{ width: "50%", display: "inline-flex" }}
+      >
+          <div className="card" style={{width : "13rem"}}>
+          <div className="card-header">Subject</div>
+        {PostData.map((element) => {
+          return <Filter uni={element.uni} />;
+        })}
+      </div>
+      </div>
       </div>
       <div className="blog-wrapper">
 
           {PostData.map((element) => {
             return (
-              <div>
+              <div>s
                 <BlogItems
                   img={element.img}
                   date={element.datePublished ? element.datePublished.slice(0, 10) : ""}
