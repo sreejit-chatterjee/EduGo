@@ -1,20 +1,23 @@
 import React from "react";
 import PostData from "../SampleOut.json";
+import QuestionsData from "../QuestionsData.json"
 import ProjectItems from "./ProjectItems";
 import Filter from "./Filter";
+import Questions from "./Questions";
 const Projects = (props) => {
+  var data = PostData.data;
   return (
     // <div className="container ml-3 my-5 col-md-6">
-    <div className="container my-3  col-md-12" style={{marginTop:"1%s"}}>
+    <div className="container my-3  col-md-12" style={{marginTop:"1%"}}>
       <div
         className="container col-md-3"
         style={{ width: "30%", display: "inline-flex" }}
       >
           <div className="card" style={{width : "13rem"}}>
           <div className="card-header">Subject</div>
-        {PostData.map((element) => {
+        {/* {data.map((element) => {
           return <Filter uni={element.uni} />;
-        })}
+        })} */}
       </div>
       </div>
       <div
@@ -22,7 +25,7 @@ const Projects = (props) => {
         style={{ width: "70%", display: "inline-flex" }}
       >
         <div className="row my-3 ml-4">
-          {PostData.map((element) => {
+          {data.map((element) => {
             return (
               <div>
                 <ProjectItems

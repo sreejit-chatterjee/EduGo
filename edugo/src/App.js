@@ -24,7 +24,9 @@ const App = () => {
       <Route path = "/blogs" element = {<BlogsPage />}></Route>
       <Route path = "/blogmain" element = {<BlogMain />}></Route> 
       <Route path = "/Q&A" element = {<Questions/>}></Route>
+      {/* <Route element = {<Footer/>}></Route> */}
       </Routes>
+      {/* <Footer/> */}
     </Router>
   );
 };
