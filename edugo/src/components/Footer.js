@@ -28,15 +28,15 @@ export default function Footer(props) {
             </div>
             <ul className="list-inline">
                 <li class="list-inline-item"><a href="#">HOME</a></li>
-                <li class="list-inline-item"><a href="#">COMPLETED PROJECTS</a></li>
-                <li class="list-inline-item"><a href="#">CURRENT PROJECTS</a></li>
+                <li class="list-inline-item"><a href="#">PROJECTS</a></li>
+                <li class="list-inline-item"><a href="#">BLOG</a></li>
+                <li class="list-inline-item"><a href="#">FAQs</a></li>
                 <li class="list-inline-item"><a href="#">ABOUT</a></li>
-                <li class="list-inline-item"><a href="#">CONTACT</a></li>
                 <br/><br/>
                 <li class="list-inline-item"><a href="#">TERMS AND CONDITIONS</a></li>
                 <li class="list-inline-item"><a href="#">PRIVACY POLICY</a></li>
             </ul>
-            <p className="copyright">Shreeyan © 2021</p>
+            <p className="copyright">EduGo © 2021</p>
         </footer>
       </div>
     </section>
