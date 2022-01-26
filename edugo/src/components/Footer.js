@@ -8,6 +8,7 @@ export default function Footer(props) {
       <div className="footer-basic">
         <footer>
             <div className="image">
+              <h2>EduGo</h2>
               <img className="logo" src="" alt="Logo" />
             </div>
             <hr style="height:2px;border-width:0;color:gray;background-color:#FFD369"/>
