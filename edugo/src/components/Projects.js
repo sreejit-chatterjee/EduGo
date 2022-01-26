@@ -27,10 +27,16 @@ const Projects = (props) => {
               <div>
                 <ProjectItems
                   title={element.title ? element.title.slice(0, 45) : ""}
-                  content={element.content ? element.content.slice(0, 80) : ""}
+                //   content={element.content ? element.content.slice(0, 80) : ""}
+                  content={element.content}
                   date={element.datePublished}
                   author={element.author}
+                  key = {element.id}
                 />
+                <div>
+
+                </div>
+
               </div>
             );
           })}
