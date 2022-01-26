@@ -5,13 +5,14 @@ import React, { useState } from "react";
 import Projects from "./components/Projects";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ReadMore from "./components/ReadMore";
-
+import Home from "./components/Home";
 const App = () => {
   return (
     <Router>
       <NavBar />
       <Routes>
-      <Route path="/projects" element= {<Projects />}></Route>
+      <Route path="/" element= {<Home/>}></Route>
+      <Route path="/projects" element= {<Projects/>}></Route>
       <Route path = "/readmore" element = {<ReadMore/>}></Route>
         
         
