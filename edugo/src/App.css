@@ -1,38 +1,477 @@
-/* .App {
-  text-align: center;
+:root {
+  --white: #f1f1f1;
+  --light-grey: #585a5e;
+  --dark-grey: #1b2431;
+  --primary: #0080a0;
+  --body-font: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Generics*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*:focus {
+  outline: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background-color: var(--white);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  order: 1;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+a,
+p {
+  padding-top: 1rem;
+  color: var(--dark-grey);
+  font-size: 1.2rem;
+}
+a {
+  font-weight: 500;
+}
+
+/*Buttons*/
+.button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+
+  display: block;
+  border-style: none;
+  border: 1px solid;
+  padding: 12px 2.4rem;
+  background-color: inherit;
+  transition: color 0.5s, background-color 0.5s;
+
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  -webkit-appearance: button;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--light-grey);
+  transition: color 0.5s, background-color 0.5s;
+}
+
+@media (min-width: 600px) {
+
+  h2 {
+    font-size: 2rem;
+  }
+  a,
+  p {
+    font-size: 1.3rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (min-width: 1000px) {
+  .button {
+    margin-top: 3.5rem;
+    padding: 7px 2.4rem;
+  }
+}
+
+/*Home*/
+.home{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+/*hero*/
+.hero{
+  width: 90%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .wrapper{
+  display: grid;
+}
+
+.hero .wrapper .content{
+  order: 2;
+  padding: 1.2rem;
+  padding-left: 0%;
+  text-align: left;
+}
+
+.hero .wrapper .content .button,
+.second .wrapper .content .button{
+  margin-left: 0;
+}
+
+.hero .wrapper .image{
+  order: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.hero .wrapper .image img{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+@media (min-width: 600px){
+  .hero .wrapper .image{
+    order: 2;
+  }
+
+  .hero .wrapper .image img{
+    max-width: 900px;
+    object-fit: cover;
+  }
+
+  .hero .wrapper .content{
+    order: 1;
+  }
+
+  .hero .wrapper{
+    grid-template-columns:  60% 40%;
+  }
+}
+
+/*second*/
+.second{
+  width: 90%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.second .wrapper{
+  display: grid;
+}
+
+.second .wrapper .content{
+  order: 2;
+  padding: 1.2rem;
+  padding-left: 0%;
+  text-align: left;
+}
+
+.second .wrapper .image{
+  order: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: flex;
+}
+
+.second .wrapper .image .col{
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.second .image img{
+  width: 100%;
+  height: 100%;
+  max-width: 65%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.second .image .hidelater{
+    max-width: 30%;
+
+    
+}
+
+@media (min-width: 700px){
+  .second .wrapper{
+    grid-template-columns:  repeat(2,1fr);
+  }
+}
+
+.service-sec{
+  background-color: var(--light-grey);
+}
+
+.services{
+  width: 90%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.services h2{
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  color: var(--white);
+}
+
+@media (min-width: 600px){
+  .services .wrapper{
+    display: flex;
+    flex-wrap: wrap; 
+  }
+
+  .services .wrapper .item{
+    flex: 0 0 25%;
+  }
+}
+.services .wrapper .item{
+  padding: 0.9375rem;
+  text-decoration: none;
+  color: var(--white);
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.services .wrapper .item h3{
+  font-size: 1.5rem;
+}
+
+.services .wrapper .item .image{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.services .wrapper .item img{
+  margin-bottom: 1.875rem;
+  height: 7rem;
+  width: 16rem;
+  border-radius: 7px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.services .wrapper .item .border{
+   height: 0.5rem;
+   width: 6rem;
+   padding: 1px;
+
+   border-radius: 50px;
+   -moz-border-radius: 50px;
+   align-items: center;
+   margin-left: auto;
+   margin-right:auto;
+   margin-bottom: 0.5rem;
+   border: 0;
+   border-color: var(--light-grey);
+   background: linear-gradient(to right, var(--light-grey), var(--primary));
+}
+
+/*Contact Us*/
+.contact{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.contact .wrapper{
+    width: 86%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+
+.contact .wrapper h2{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    order: 1;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    
+    border-bottom: 2px solid;
+    border-color: var(--dark-grey);
+}
+
+.contact .wrapper .content{
+    order: 2;
+    justify-content: center;
+    
+    text-align: center;
+}
+
+.contact .wrapper .content p{
+    padding-top: 1.75rem;
+    padding-bottom: 1.5rem;
+}
+
+.contact .wrapper .content a{
+    padding-top: 1rem;
+    color: var(--dark-grey);
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    right: 0%;
+    text-decoration: none;
+}
+
+@media (min-width: 600px){
+    .contact .wrapper h2{
+        justify-self: start;
+        font-size: 2.5rem;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-right: 15%;
+        border-bottom: 0;
+        border-right: 2px solid;
+        border-color: var(--dark-grey);
+    }
+    .contact .wrapper .content{
+        padding-top: 5%;
+        padding-left: 3%;
+        text-align: left;
+        
+    }
+
+    .contact .wrapper{
+        grid-template-columns: 35% 65%;
+   
+    }
+}
+
+
+/*Blogs*/
+.blogs{
+  padding-top: 3.25rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+
+.filters{
+  order: 1;
+
+}
+
+.blog-wrapper {
+  order: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 20rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media (min-width: 700px){
+  .blogs{
+    grid-template-columns: 30% 70%;
+  }
+}
+
+.card {
+
+  overflow: hidden;
+  box-shadow: 0 2px 20px var(--light-grey);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
 }
 
-.App-link {
-  color: #61dafb;
+.card .image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.card .image .img{
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .card-content{
+  padding: 1.2rem;
+  padding-top: 0;
+  border-bottom: 3px solid;
+  border-color: var(--dark-grey);
+}
+
+.card .card-grey{
+  padding-top: 0.8rem;
+  color: var(--light-grey);
+  font-size: 1rem;
+}
+
+.card .card-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: left;
+    order: 1;
+}
+
+.card .card-button{
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    background: transparent;
+    margin: 0;
+    border-radius: 2px;
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card .card-button:hover{
+  color: var(--primary);
+}
+
