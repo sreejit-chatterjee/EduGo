@@ -5,7 +5,7 @@ import Filter from "./Filter";
 const Projects = (props) => {
   return (
     // <div className="container ml-3 my-5 col-md-6">
-    <div className="container my-3  col-md-12">
+    <div className="container my-3  col-md-12" style={{marginTop:"1%s"}}>
       <div
         className="container col-md-3"
         style={{ width: "30%", display: "inline-flex" }}

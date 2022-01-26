@@ -1,6 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
-import ReadMore from "./ReadMore";
+// import PropTypes from "prop-types";
+// import ReadMore from "./ReadMore";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
