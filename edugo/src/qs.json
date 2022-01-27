@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "What is foobar?",
+      "tags": [
+        {
+          "tag": "want-to-learn",
+          "count": 0
+        }
+      ],
+      "answers": [
+        {
+          "person": "admin",
+          "description": "foobar is something even i dont know",
+          "datePublished": "2022-01-27 06:47:25+00:00"
+        },
+        {
+          "person": "admin",
+          "description": "even i dont know",
+          "datePublished": "2022-01-27 06:47:47+00:00"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "What is foobar?",
+      "tags": [
+        {
+          "tag": "want-to-learn",
+          "count": 0
+        }
+      ],
+      "answers": [
+        {
+          "person": "admin",
+          "description": "foobar is something even i dont know",
+          "datePublished": "2022-01-27 06:47:25+00:00"
+        },
+        {
+          "person": "admin",
+          "description": "even i dont know",
+          "datePublished": "2022-01-27 06:47:47+00:00"
+        }
+      ]
+    },
+    {
+      "title": "sxikmwcddsh",
+      "description": "hhink",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "registration": [
+    {
+      "fname": "Sreejit",
+      "lname": "Chatterjee",
+      "dob": "Some Date",
+      "email": "Sreejit@s.c",
+      "phonenumber": "24234235",
+      "id": 1
+    },
+    {
+      "fname": "Gauri",
+      "lname": "Pethkar",
+      "dob": "Some Date",
+      "email": "Gauri@s.c",
+      "phonenumber": "234234",
+      "id": 2
+    },
+    {
+      "fname": "Sw djkksn m",
+      "lname": "dedjk",
+      "dob": "dwkdne",
+      "email": "dekd@d.c",
+      "phonenumber": "98333347557",
+      "id": 3
+    },
+    {
+      "fname": "Sw djkksn m",
+      "lname": "dedjk",
+      "dob": "dwkdne",
+      "email": "dekd@d.c",
+      "phonenumber": "3323",
+      "id": 4
+    },
+    {
+      "fname": "Sw djkksn m",
+      "lname": "dedjk",
+      "dob": "dwkdne",
+      "email": "dekd@d.c",
+      "phonenumber": "3323",
+      "id": 5
+    }
+  ]
+}

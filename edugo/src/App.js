@@ -9,7 +9,7 @@ import BlogsPage from "./components/Blogs";
 import BlogMain from "./components/BlogMain";
 import Footer from "./components/Footer";
 import Questions from "./components/Questions";
-
+import NewQuestions from "./components/NewQuestions";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
@@ -25,6 +25,7 @@ const App = () => {
       <Route path = "/blogs" element = {<BlogsPage />}></Route>
       <Route path = "/blogmain" element = {<BlogMain />}></Route> 
       <Route path = "/Q&A" element = {<Questions/>}></Route>
+      <Route path = "/ABC" element = {<NewQuestions/>}></Route>
       {/* <Route element = {<Footer/>}></Route> */}
       </Routes>
       <Footer/>
