@@ -7,10 +7,7 @@ export default function Footer(props) {
 
       <div className="footer-basic">
         <footer>
-            <div className="image">
-              <h2>EduGo</h2>
-              <img className="logo" src="" alt="Logo" />
-            </div>
+            <h2>EduGo</h2>
             <hr style={{height:"2px",borderWidth:"0",color:"gray",backgroundColor:"#FFD369"}}/>
             <div className="social">
                 <a href="#">
@@ -27,11 +24,11 @@ export default function Footer(props) {
                 </a>
             </div>
             <ul className="list-inline">
-                <li class="list-inline-item"><a href="#">HOME</a></li>
-                <li class="list-inline-item"><a href="#">PROJECTS</a></li>
-                <li class="list-inline-item"><a href="#">BLOG</a></li>
-                <li class="list-inline-item"><a href="#">FAQs</a></li>
-                <li class="list-inline-item"><a href="#">ABOUT</a></li>
+                <li class="list-inline-item"><a href="/">HOME</a></li>
+                <li class="list-inline-item"><a href="/projects">PROJECTS</a></li>
+                <li class="list-inline-item"><a href="/blogs">BLOG</a></li>
+                <li class="list-inline-item"><a href="/Q&A">FAQs</a></li>
+                <li class="list-inline-item"><a href="/about-us">ABOUT</a></li>
                 <br/><br/>
                 <li class="list-inline-item"><a href="#">TERMS AND CONDITIONS</a></li>
                 <li class="list-inline-item"><a href="#">PRIVACY POLICY</a></li>

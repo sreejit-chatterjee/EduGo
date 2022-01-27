@@ -8,28 +8,21 @@ const Projects = (props) => {
   return (
     // <div className="container ml-3 my-5 col-md-6">
     <section className="blogs" style={{marginTop : "%"}}>
-      <div className="filters">
-      {/* {PostData.map((element) => {
-          return (<Filter uni={element.uni} />);
-        })} */}
-        <div
-        className="container col-md-5"
-        style={{ width: "50%", display: "inline-flex" }}
-      >
-          <div className="card" style={{width : "13rem"}}>
-          <div className="card-header">Subject</div>
-        {PostData.map((element) => {
-          return <Filter uni={element.uni} />;
-        })}
+      <div className="new-blog">
+
+          <h2>Create a New Blog</h2>
+          <p>Want to share some of your content with us. Send in any article, content or blog today</p>
+          <button className="button" ><a href="/create-new-blog">Create Blog</a></button>
+    
       </div>
-      </div>
-      </div>
+      
       <div className="blog-wrapper">
 
           {PostData.map((element) => {
             return (
-              <div>s
+              <div>
                 <BlogItems
+                  id={element.id}
                   img={element.img}
                   date={element.datePublished ? element.datePublished.slice(0, 10) : ""}
                   author={element.author}
