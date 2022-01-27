@@ -7,10 +7,7 @@ export default function Footer(props) {
 
       <div className="footer-basic">
         <footer>
-            <div className="image">
-              <h2>EduGo</h2>
-              <img className="logo" src="" alt="Logo" />
-            </div>
+            <h2>EduGo</h2>
             <hr style={{height:"2px",borderWidth:"0",color:"gray",backgroundColor:"#FFD369"}}/>
             <div className="social">
                 <a href="#">

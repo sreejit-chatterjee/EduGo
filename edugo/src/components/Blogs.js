@@ -28,8 +28,9 @@ const Projects = (props) => {
 
           {PostData.map((element) => {
             return (
-              <div>s
+              <div>
                 <BlogItems
+                  id={element.id}
                   img={element.img}
                   date={element.datePublished ? element.datePublished.slice(0, 10) : ""}
                   author={element.author}
