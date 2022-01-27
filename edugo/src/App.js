@@ -11,6 +11,9 @@ import Footer from "./components/Footer";
 import Questions from "./components/Questions";
 import Register from "./components/Register";
 import About from "./components/About";
+import NewBlog from "./components/NewBlog";
+import Uploaded from "./components/Done";
+
 
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -20,13 +23,15 @@ const App = () => {
     <Router>
       <NavBar />
       <Routes>
-      <Route path="/" element= {<Home/>}></Route>
-      <Route path="/projects" element= {<Projects/>}></Route>
-      <Route path = "/readmore" element = {<Register/>}></Route>
+      <Route path= "/" element= {<Home/>}></Route>
+      <Route path= "/projects" element= {<Projects/>}></Route>
+      <Route path = "/read-more" element = {<Register/>}></Route>
       <Route path = "/blogs" element = {<BlogsPage />}></Route>
-      <Route path = "/blogmain" element = {<BlogMain />}></Route> 
+      <Route path = "/create-new-blog" element = {<NewBlog />}></Route>
+      <Route path = "/blog-main" element = {<BlogMain />}></Route> 
+      <Route path = "/uploaded" element = {<Uploaded />}></Route> 
       <Route path = "/Q&A" element = {<Questions/>}></Route>
-      <Route path = "/AboutUs" element = {<About/>}></Route>
+      <Route path = "/about-us" element = {<About/>}></Route>
       {/* <Route element = {<Footer/>}></Route> */}
       </Routes>
       <Footer/>

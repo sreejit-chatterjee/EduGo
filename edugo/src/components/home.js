@@ -9,7 +9,8 @@ export default function Home(props) {
           <div className="content">
             <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2> 
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae aliquid odit, modi perspiciatis hic animi, ullam reprehenderit eum placeat deserunt cumque nihil eligendi optio quia nobis ex aspernatur ducimus. Laudantium.</p>
-            <button className="button">Explore</button>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae aliquid odit, modi perspiciatis hic animi, ullam reprehenderit eum placeat deserunt cumque nihil eligendi optio quia nobis ex aspernatur ducimus. Laudantium.</p>
+
           </div>
           <div className="image">
             <img 
@@ -31,7 +32,7 @@ export default function Home(props) {
           <div className="content">
             <h2>Build Projects with us to get ahead.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam sint quasi eligendi neque corporis quas perspiciatis necessitatibus. Odio, ullam minus. Dolorum quisquam ab porro aperiam non quia iste rem!</p>
-            <button className="button">Build Now</button>
+            <button href="/projects" className="button">Build Now</button>
           </div>
 
         </div>
@@ -42,36 +43,36 @@ export default function Home(props) {
           <h2>Services Provided By Us</h2>
           <div className="wrapper">
             
-            <Link to="#" className="item">
+            <Link to="/projects" className="item">
               <div className="logo">
                 <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
               </div>
               <div className="border"></div>
-              <h3>Lorem ipsum dolor, sit</h3> 
+              <h3>Register for Projects</h3> 
             </Link>
 
-            <Link to="#" className="item">
+            <Link to="/blogs" className="item">
                 <div className="logo">
-                  <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+                  <img src="https://cdn.pixabay.com/photo/2015/07/28/21/58/student-865073__340.jpg"/>
                 </div>
                 <div className="border"></div>
-                <h3>Lorem ipsum dolor, sit</h3> 
+                <h3>Popular Blogs</h3> 
             </Link>
             
-            <Link to="#" className="item">
+            <Link to="/Q&A" className="item">
                 <div className="logo">
-                  <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+                  <img src="https://cdn.pixabay.com/photo/2016/11/30/12/16/question-mark-1872665__480.jpg"/>
                 </div>
                 <div className="border"></div>
-                <h3>Lorem ipsum dolor, sit</h3>   
+                <h3>Online Forum</h3>   
             </Link>
             
-            <Link to="#" className="item">
+            <Link to="/Register" className="item">
                 <div className="logo">
-                  <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+                  <img src="https://cdn.pixabay.com/photo/2015/01/09/11/09/meeting-594091__340.jpg"/>
                 </div>
                 <div className="border"></div>
-                <h3>Lorem ipsum dolor, sit</h3> 
+                <h3>Create Projects</h3> 
             </Link>
           </div>
           </div>
@@ -79,11 +80,11 @@ export default function Home(props) {
 
       <section class="contact">
         <div class="wrapper">
-          <h2>Our Projects</h2>
+          <h2>About Us</h2>
           
           <div class="content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veritatis similique voluptatum odio eius ducimus animi perferendis ipsam expedita imp</p>
-            <a to="#">Contact Us</a>
+            <a href="/AboutUs">Learn More</a>
           </div>
         </div>
       </section>

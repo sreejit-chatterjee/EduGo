@@ -18,19 +18,19 @@ export default function About(props) {
 
         <div className="projects">
           <div className="item">
-            <img src="assets/img/background-images/project-background.jpg" alt="featured-img"/>
+            <img src="https://thumbs.dreamstime.com/b/big-data-analytics-bi-business-intelligence-concept-chart-graph-icons-virtual-screen-big-data-analytics-bi-business-126811848.jpg" alt="featured-img"/>
           </div>
             
           <div className="item">
-            <img src="assets/img/background-images/project-background.jpg" alt="featured-img"/>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaG5vbG9neXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="featured-img"/>
           </div>
             
           <div className="item">
-            <img src="assets/img/background-images/project-background.jpg" alt="featured-img"/>
+            <img src="https://images.unsplash.com/photo-1638913660106-73b4bac0db09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8OHx8dGVjaG5vbG9neXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="featured-img"/>
           </div>
                     
           <div className="item">
-            <img src="assets/img/background-images/project-background.jpg" alt="featured-img"/>
+            <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHRlY2hub2xvZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="featured-img"/>
           </div>
         </div>
       </div>
@@ -38,12 +38,12 @@ export default function About(props) {
       <div className="team">
       <h1>Our Team</h1>
       <div className="image">
-        <img src="" alt="team-img"/>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dGVhbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="team-img"/>
       </div>
       <div className="wrapper">
         <div className="pop-up">
-          <h2 className="other-h1">The people in</h2>
-          <h2>EduGo</h2>
+          <h2 className="other-h1">The people in EduGo</h2>
+          
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut nobis alias deserunt quisquam porro libero suscipit. Fuga, tempore accusantium. Odio eveniet accusantium nostrum nam saepe molestiae debitis, perspiciatis praesentium?</p>
         </div>
 

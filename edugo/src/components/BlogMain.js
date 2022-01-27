@@ -15,7 +15,7 @@ export default function Blog(props) {
           </div>
           
           <div className="image">
-            <img src="" alt=""/>
+            <img src="https://thumbs.dreamstime.com/b/big-data-analytics-bi-business-intelligence-concept-chart-graph-icons-virtual-screen-big-data-analytics-bi-business-126811848.jpg" alt=""/>
           </div>
 
         </div>
@@ -25,20 +25,26 @@ export default function Blog(props) {
         <div className="post">
           <div className="wrapper">
             <div class="date">
-              <p>Novemeber 5, 2021 | Content Writing Tips</p>
-              <p>By author</p>
+              <p>2020-04-27 | Big Data</p>
+              <p>By Vineet Patil</p>
             </div>
             <div className="votes">
-              <p>votes</p>
+              <p>24 Upvotes</p>
             </div>
           </div>
 
           <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas beatae sed consequatur deleniti amet dolores nam eum necessitatibus. Minus odit atque id? Odit, modi. Necessitatibus assumenda maxime consequatur perferendis.</p>
 
+          <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas beatae sed consequatur deleniti amet dolores nam eum necessitatibus. Minus odit atque id? Odit, modi. Necessitatibus assumenda maxime consequatur perferendis.</p>
+          <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptas beatae sed consequatur deleniti amet dolores nam eum necessitatibus. Minus odit atque id? Odit, modi. Necessitatibus assumenda maxime consequatur perferendis.</p>
+
           <div class="post-tags">
             <h4>Post Tags</h4>
             <p>
-              <a>How to Start an Agency</a>
+              <a>Big Data</a>,
+              <a>Lorem ipsum dolor</a>,
+              <a>Lorem ipsum dolor</a>,
+              <a>Lorem ipsum dolor</a>
             </p>
           </div>
         </div>
@@ -51,8 +57,18 @@ export default function Blog(props) {
               <span></span>
             </div>
             <div className="col">
-              <p>dsfsdgfsdfds</p>
-              <span>date</span>
+              <p>Awesome post!</p>
+              <span>2020-04-27</span>
+            </div>
+          </div>
+          <div className="item">
+            <div className="col">
+              <p className="user">User534</p>
+              <span></span>
+            </div>
+            <div className="col">
+              <p>Good content!</p>
+              <span>2020-04-27</span>
             </div>
           </div>
         </div>
