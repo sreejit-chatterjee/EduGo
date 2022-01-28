@@ -1,29 +1,37 @@
-import React from 'react';
-import QuestionsData from "../qs.json"
-import QuestionsItems from './QuestionsItems';
+import React from "react";
+import QuestionsData from "../qs.json";
+import QuestionsItems from "./QuestionsItems";
 var data = QuestionsData.data;
-const Questions=(props)=>{
-    
-  return (<div>
-      <div className="container" style={{marginTop : "10%"}}>
-          
+const Questions = (props) => {
+  return (
+    <div>
+      <div className="container create" style={{ marginTop: "10%" }}>
+        {/* <div className="card text-center"> */}
+          {/* <strong>New Question?</strong> */}
+          <a href="/ABC" className="button">
+            Add Question
+          </a>
+        {/* </div> */}
       </div>
 
-
-     <div className="container" style={{marginTop : "1%"}}>
-        {data.map((element) =>{
-            return(
-                <div>
-                    {/* <h1 style={{marginTop : "30%"}}>{element.tags.tag}</h1> */}
-                <QuestionsItems title = {element.title} content = {element.content} tags = {element.tags} answers = {element.answers}/>
-                {/* <h1>{element.tags.tag}</h1> */}
-                </div>
-            );
+      <div className="container" style={{ marginTop: "1%" }}>
+        {data.map((element) => {
+          return (
+            <div>
+              {/* <h1 style={{marginTop : "30%"}}>{element.tags.tag}</h1> */}
+              <QuestionsItems
+                title={element.title}
+                content={element.content}
+                tags={element.tags}
+                answers={element.answers}
+              />
+              {/* <h1>{element.tags.tag}</h1> */}
+            </div>
+          );
         })}
-      </div> 
-
-
-  </div>);
-}
+      </div>
+    </div>
+  );
+};
 
 export default Questions;
