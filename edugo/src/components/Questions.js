@@ -1,8 +1,31 @@
-import React from "react";
+import React,{useEffect} from "react";
 import QuestionsData from "../qs.json";
 import QuestionsItems from "./QuestionsItems";
 var data = QuestionsData.data;
 const Questions = (props) => {
+
+  // const sendData = ()=>{
+  //   const submission = {description};
+  //   console.log(submission);
+  //   fetch("http://localhost:8000/questions", {
+  //     method: "GET",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(submission),
+  //   }).then(() => {
+  //     console.log("NEW");
+  //   });
+  // }
+  useEffect(() => {
+    const data = fetch("http://localhost:8000/questions", {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+      // body: JSON.stringify(submission),
+    }).then((d) => {
+      console.log("NEW");
+      console.log(d);
+    });
+  }, []);
+  
   return (
     <div>
       <div className="container create" style={{ marginTop: "10%" }}>

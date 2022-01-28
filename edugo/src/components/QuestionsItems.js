@@ -12,8 +12,8 @@ function QuestionsItems(props) {
     // const submission = {fname,lname,dob,sex,email,phonenumber}
     const submission = { description};
     console.log(submission);
-    fetch("http://localhost:8000/data", {
-      method: "POST",
+    fetch("http://localhost:8000/questions", {
+      method: "GET",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(submission),
     }).then(() => {
